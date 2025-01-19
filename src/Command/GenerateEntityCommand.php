@@ -10,7 +10,7 @@ use Terminal42\WeblingApi\EntityManager;
 
 class GenerateEntityCommand extends BaseCommand
 {
-    public function __construct(EntityManager $entityManager = null, Filesystem $filesystem = null)
+    public function __construct(?EntityManager $entityManager = null, ?Filesystem $filesystem = null)
     {
         $this->manager = $entityManager;
 
